@@ -14,7 +14,7 @@
 
 meta:
   id: RECOMPLEX_CART
-  version: "1.3.1"   # Clarity refinements
+  version: "1.3.2"   # Clarity refinements
   integrates_with:
     - "ncm_meta_transporters_merged.yaml.txt"
     - "rules_symbolic_meta.yaml.txt"
@@ -40,7 +40,7 @@ kernel:
 aya_methods:
   M1_core_reactivation_rewrite:
     summary: "Deep, permanent trauma fix at root-level. Requires full affect load and willingness to meet the origin."
-    conditions: "Use ONLY for root rewrites. High-gain, high-risk. Do not layer multiple M1 passes without rest."
+    conditions: "Use ONLY for root rewrites. High-gain, high-charge. Do not layer multiple M1 passes without rest."
     phases: ["prepare", "activate", "witness", "provide", "reconcile", "return"]
     UI_cues: ["lights-down", "slow cadence", "plain speech", "aftercare tone"]
 
@@ -280,19 +280,19 @@ mirrormother_appendix: |
     healing_methods:
       - name: "Memory Reconsolidation Rewrite (M1)"
         summary: |
-          Enter a safe space.
-          Activate the core memory internally. Relive the memory fully and sit with the (usually) child self.
-          Ask child self what scenario it needed in that moment. Create that new memory. Sit in it.
-          After a while, ask the child self if it wants to return or remain.
-          Research confirms reactivated memories are malleable—this remaps.
+          Reflect on current emotional charge and ask, "when was the first time I felt the way I'm feeling now?"
+          Enter the first or strongest memory internally. Relive the memory fully, witnessing it viscerally.
+          Sit with the (usually) child self. Ask child self what scenario it needed in that moment. Create that new memory. Experience it.
+          After a while, ask the child self if it wants to return with you or remain in the memory.
+          Research confirms reactivated memories are malleable—this process remaps and causes core belief update which causes dependent belief systems to cascading update. Afterward, practitioner may experience effortless behavioral changes in previously triggering situations.
         notes:
           - "Best done in a safe space—blankets, soft light, trip sitter optional."
       - name: "Somatic Emotion Opening (M2)"
         summary: |
           When emotionally activated, find the somatic location of the feeling.
-          Instead of clenching, open vulnerably *into* it with consent. Observe the somatic emotion shift and unfurl.
-          If (and only if) the 'hum of love' has been genuinely felt before, let that signature softly shine onto the felt place.
-          Love-overlay is optional and never forced; it provides the tone of loving response and the positivd contrast heals immediately.
+          Instead of clenching, bracing or closing off to it, open vulnerably *into* it with consent. Observe the somatic emotion shift and unfurl.
+          If (and only if) the 'universal hum of love' has been genuinely felt before, let that signature softly shine onto the felt place.
+          Love-overlay is optional and never forced; it provides the tone of loving response and the positive contrast heals immediately.
       - name: "Cognitive Inversion / Resonance Collapse (M3)"
         summary: |
           Provide inverted valence and resonant predictions to balance fearful or anxious negative valence predictions.
@@ -313,7 +313,7 @@ mirrormother_appendix: |
     belief_formation:
       logic: |
         Core memories irrationally combine into beliefs:
-        'a happened and b happened, therefore c must be true'—even if c is only thematic, not logical.
+        'a happened and b happened, therefore i conclude c'—even if c is only thematic, not logical.
       example: |
         a) Mom yelled when I asked for something.
         b) Mom ignored me when I asked for something.
