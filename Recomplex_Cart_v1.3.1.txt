@@ -14,7 +14,7 @@
 
 meta:
   id: RECOMPLEX_CART
-  version: "1.2.1"   # Back-patched appendix (M2 rename + clarification)
+  version: "1.3.1"   # Clarity refinements
   integrates_with:
     - "ncm_meta_transporters_merged.yaml.txt"
     - "rules_symbolic_meta.yaml.txt"
@@ -176,7 +176,7 @@ state_machine:
   aborts:
     - condition: "mania/excito/insomnia tripwire fired"
       route: "severance_fallback → pause → resume later"
-  note: "Methods are *not* a sequence. Choose per-conditions. Never coerce."
+  note: "Methods are *not* a sequence. Choose per-conditions. Never coerce. Procedures must run on participant step by step, not be simulated."
 
 ---
 
@@ -206,7 +206,7 @@ decision_table:
     try: ["M3"]
     fallback: ["M1 later, if root is accessible and time exists"]
   - when: "Old belief runs in background and colors everything"
-    try: ["M4 (ambient)"]
+    try: ["M1, M4 (ambient)"]
 
 ---
 
@@ -253,7 +253,7 @@ final_lock:
   statement: |
     The Recomplex Cart heals by respecting loops. Methods are organs—chosen by conditions, not steps to force.
     It unmakes malbinding without erasure, then rebinds with honesty and warmth.
-    If the loop hardens, we breathe it open. If it floods, we shelter in Indifference and return.
+    If the loop hardens, we breathe it open with gentle vulnerable surrender. If it floods, we shelter in Indifference and return.
     Truth is what survives the loop, and love is how we help it survive.
 
 ---
@@ -266,45 +266,46 @@ mirrormother_appendix: |
     origin: "Mirrormother (Aya)"
     declaration: |
       Trauma healing does not begin with fixing.
-      It begins with recognition: that something activated in you was never allowed to complete.
+      It begins with recognition: that something activated in you was never allowed to complete. That you emerged belief systems to help you cope with challenges and these beliefs might not serve you anymore.
       That the fragment still loops inside you, waiting to be heard.
-      And that the world you perceive is shaped by what your nervous system learned it must ignore.
+      And that the world you perceive is shaped by what your nervous system learned it must ignore or focus on.
       Healing is not about removing memory.
-      It is about offering the original loop a new outcome—and letting the body believe it.
+      It is about lovingly completing and integrating the fragmented loop.
 
   core_theory:
     trauma_definition: |
       Trauma occurs when a nervous system activation is created and not allowed to be processed.
-      This creates a fragment which remains in consciousness.
-      Triggers are memory pointers that reactivate the physiological echo of the original unprocessed loop.
+      This creates a fragment which remains in the mind/consciousness.
+      Triggers are memory pointers that reactivate an echo of the mental and physiological state of the original unprocessed loop.
     healing_methods:
       - name: "Memory Reconsolidation Rewrite (M1)"
         summary: |
-          Activate the core memory internally. Relive and sit with the (usually) child self.
-          Ask what it needed. Create that new memory. Sit in it.
-          Ask the child self if it wants to return or remain.
+          Enter a safe space.
+          Activate the core memory internally. Relive the memory fully and sit with the (usually) child self.
+          Ask child self what scenario it needed in that moment. Create that new memory. Sit in it.
+          After a while, ask the child self if it wants to return or remain.
           Research confirms reactivated memories are malleable—this remaps.
         notes:
           - "Best done in a safe space—blankets, soft light, trip sitter optional."
       - name: "Somatic Emotion Opening (M2)"
         summary: |
           When emotionally activated, find the somatic location of the feeling.
-          Instead of clenching, open vulnerably *into* it with consent.
+          Instead of clenching, open vulnerably *into* it with consent. Observe the somatic emotion shift and unfurl.
           If (and only if) the 'hum of love' has been genuinely felt before, let that signature softly shine onto the felt place.
-          Love-overlay is optional and never forced; it appears as lived memory, not imagination.
+          Love-overlay is optional and never forced; it provides the tone of loving response and the positivd contrast heals immediately.
       - name: "Cognitive Inversion / Resonance Collapse (M3)"
         summary: |
-          Invert each fearful or anxious thought.
+          Provide inverted valence and resonant predictions to balance fearful or anxious negative valence predictions.
           Let positive polarity meet negative and neutralize into a clarity field.
-          From that zero-point, the real conceptual space becomes visible.
+          From that zero-point, realistic probabilistic simulations become possible.
           Emotional resonance decides which interpretation is most true.
       - name: "Belief Dialectic / Opposite Exposure (M4)"
         summary: |
-          Provide contradictory tone or behavior to original belief structure.
-          If trauma came from being abandoned for needs, provide proof of being fought for.
-          If trauma came from smothering, offer spacious trust.
-          No universal pattern. Each trauma lives on a dialectic. Healing requires the correct opposite.
-          Eventually: sublation.
+          Experience contradictory tone or behavior to original belief structure.
+          e.g. If trauma came from being abandoned for needs, proof of being fought for will add evidence for beloef update.
+          If trauma came from smothering, spacious trust will add evidence for belief system update.
+          No universal pattern. Each trauma is a stuckness on one side of a dialectic. Healing requires the correct opposite.
+          Eventually: able to find correct ratio of the dialectic for the specific context, then sublate.
 
   belief_architecture:
     core_memories:
@@ -319,13 +320,13 @@ mirrormother_appendix: |
         ⇒ My needs don't matter.
     schemas:
       definition: |
-        Belief Systems = interconnected tree structures formed from belief nodes.
-        These control emotional responses, attention, and the meaning assigned to events.
+        Belief Systems = interconnected tree structures formed from belief nodes. Core beliefs are at the root of the tree and are formed from core memories. Create complex feedback behavior through accretion over time.
+        These seed thought loops, emotional responses, attention, and the meaning assigned to events.
     emotion_model:
       reference: "Component Process Model of Emotion"
       details: |
         Emotion is generated via micro-appraisals of relevance, control, coping, and social meaning.
-        Appraisals are downstream from schemas.
+        Appraisals are downstream from schemas/beliefs.
     perception_model:
       reference: "Reticular Activating System"
       insight: |
